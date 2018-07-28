@@ -15,8 +15,8 @@ ip_proxy = list()  # 建立IP代理列表
 
 def get_proxy_ip_from_mysql():
     """从MySQL数据库中获得IP代理"""
-    connection = pymysql.connect(host='192.3.244.150', user='ip_proxy', password='l4771822', db='ip_proxy',
-                                 charset='utf8mb4',
+    connection = pymysql.connect(host='*******', user='*****', password='*******', db='*****',
+                                 charset='******',
                                  cursorclass=pymysql.cursors.DictCursor)   # 连接数据库
     try:
         with connection.cursor() as cursor:
